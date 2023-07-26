@@ -1,7 +1,11 @@
-import pytest
 import uuid
 
+import chromedriver_autoinstaller
+import pytest
 from selenium import webdriver
+
+# Для пользователей Windows
+chromedriver_autoinstaller.install()
 
 
 @pytest.fixture
